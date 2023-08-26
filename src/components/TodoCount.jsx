@@ -1,5 +1,6 @@
-import React from "react";
+// import React from "react";
 
+// disable linters
 function ToDoCount({ todos }) {
   return (
     <div className="to-do-count">

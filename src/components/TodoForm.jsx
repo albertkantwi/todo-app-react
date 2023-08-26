@@ -1,4 +1,4 @@
-import react, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { AiOutlineClear } from 'react-icons/ai';
 import { GrFormAdd } from 'react-icons/gr';
 
