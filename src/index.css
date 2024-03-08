@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(90deg, #e03ce0 0%, #8932db 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.to-do-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 600px;
+  background: #e750a3;
+  text-align: center;
+  margin: 128px auto;
+  padding-bottom: 32px;
+  width: 800px;
+  border: solid #000 10px;
+}
+
+h1 {
+  margin: 32px auto;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.to-do-count {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.to-do-form {
+  margin-bottom: 12px;
+}
+
+.to-do-input {
+  padding: 16px 36px 13px 12px;
+  border: 2px solid #000;
+  outline: none;
+  width: 500px;
+  background: transparent;
+  background-color: #8932db;
+  opacity: 0.8;
+}
+
+.to-do-input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-style: italic;
+}
+
+.add-button {
+  margin-left: 5px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #8932db 30%, rgba(75, 150, 300, 1.5) 90%);
+}
+
+.add-icon {
+  font-size: 15px;
+}
+
+.clear-button {
+  padding: 15px;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #8932db 30%, rgba(75, 150, 300, 1.5) 90%);
+}
+
+.clear-icon {
+  font-size: 15px;
+  color: #000;
+}
+
+.delete-icon {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.to-do-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(90deg, #723408 0%, #ee9b7a 100%);
+  padding: 12px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.to-do-row:nth-child(4n + 1) {
+  background: linear-gradient(90deg, #401891 0%, #ac85c4 100%);
+}
+
+.to-do-row:nth-child(4n + 2) {
+  background: linear-gradient(90deg, #d158cb 0%, #f13298 100%);
+}
+
+.to-do-row:nth-child(4n + 3) {
+  background: linear-gradient(90deg, #2371a8 0%, #7c9fcc 100%);
+}
+
+/* For Mobile Only */
+@media screen and (max-width: 768px) {
+  .to-do-app {
+    width: auto;
+    margin: 64px 32px auto 32px;
+    min-height: 600px;
+  }
+
+  .to-do-input {
+    width: auto;
+  }
+}
